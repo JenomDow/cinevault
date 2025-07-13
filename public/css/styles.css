@@ -1,0 +1,138 @@
+/* Anime Background for Hero Section */
+.hero {
+  background-image: url('https://wallpaperaccess.com/full/4056722.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 0, 76, 0.5);
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #dddddd;
+  max-width: 600px;
+}
+
+/* Base Styling */
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1.2s ease-in;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff004c;
+}
+
+nav a, nav span {
+  margin-right: 15px;
+  color: #00ff9d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff004c;
+}
+
+main {
+  padding: 30px;
+}
+
+/* Buttons */
+button, .button {
+  background-color: #ff004c;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #00ff9d;
+  transform: scale(1.05);
+}
+
+/* Error Styling */
+.error {
+  color: #ff3d3d;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Card Style */
+.card {
+  background: #1a1a1a;
+  border: 1px solid #00ff9d;
+  border-left: 5px solid #ff004c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 255, 157, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 76, 0.8);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+  border: 1px solid #00ff9d;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff004c;
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 40px;
+}

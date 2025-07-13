@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title CineVault - Movie Collection
+    link(rel="stylesheet", href="/css/styles.css")
+  body
+    header
+      nav
+        a(href="/") CineVault 🧧
+        if user
+          span Welcome #{user.username}
+          form(action="/logout", method="POST")
+            button Logout
+          a(href="/movies/add") ➕ Add Movie
+        else
+          a(href="/login") Login
+          a(href="/register") Register
+    main
+      block content
+    footer
+      p © 2025 CineVault. Anime lives here.

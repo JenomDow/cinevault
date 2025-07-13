@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .hero
+    h1 CineVault: Enter the Anime Realm 🎥
+    p Discover, Collect, and Share your favorite anime and cinema movies.
+    if user
+      a.button(href="/movies/add") ➕ Add New Movie
+    else
+      a.button(href="/register") 🚀 Register to Add Movies
+
+  hr
+
+  each movie in movies
+    div.card
+      h2 #{movie.name}
+      p #{movie.description.substring(0, 100)}...
+      p Genre: #{movie.genres.join(', ')} | Rated: #{movie.rating}/10
+      a.button(href=`/movies/${movie._id}`) 📖 View Details
