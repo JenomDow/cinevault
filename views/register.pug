@@ -2,11 +2,20 @@ extends layout
 
 block content
   h2 Register for CineVault
+
+  p.note 📝 To register:
+    ul
+      li Username must be at least 3 characters
+      li Password must be at least 6 characters
+
   if error
     p.error #{error}
+
   form(action="/register", method="POST")
     label(for="username") Username:
-    input(type="text", name="username", required)
+    input(type="text", name="username", placeholder="e.g. jenom123", required)
+
     label(for="password") Password:
-    input(type="password", name="password", required)
+    input(type="password", name="password", placeholder="At least 6 characters", required)
+
     button(type="submit") Register
